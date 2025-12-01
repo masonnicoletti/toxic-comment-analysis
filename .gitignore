@@ -3,6 +3,7 @@ data/*.csv
 
 # Ignore virtual environment elements
 Pipfile
+Pipfile.lock
 requirements.txt
 .DS_Store
 data/.DS_Store
