@@ -6,7 +6,7 @@ def clean_data(df):
     drop_columns = [
         "id",
         "split",
-        "created_date", # unless we want to look at time of day, day of week, month, etc
+        "created_date",
         "publication_id",
         "parent_id",
         "article_id",
@@ -34,7 +34,8 @@ def clean_data(df):
         "intellectual_or_learning_disability",
         "psychiatric_or_mental_illness",
         "other_disability",
-        "identity_annotator_count" # not sure if this variable is useful for us
+        "identity_annotator_count", # this is feature engineered, making it colinear with existing variables
+        "toxicity_annotator_count"  # this is feature engineered, making it colinear with existing variables
     ]
     df = df.drop(drop_columns, axis=1)
 
@@ -46,5 +47,6 @@ def clean_data(df):
 
     # Encode the rating variable
     df = pd.get_dummies(df, columns=['rating'], drop_first=True)
+    df = df.rename(columns={"rating_rejection": "rating"})
 
     return df
