@@ -8,3 +8,6 @@ requirements.txt
 .DS_Store
 data/.DS_Store
 venv/
+
+# Ignore scripts cruft
+scripts/__pycache__
