@@ -63,7 +63,7 @@ toxic-comment-analysis/
 ├── .gitignore                          # Files and folders excluded from version control
 ├── requirements.txt                    # Project dependencies
 └── README.md                           # Project description and documentation
-
+```
 
 ## Dataset Description: 
 This project uses the Jigsaw Unintended Bias in Toxicity Classification dataset, a large-scale public dataset released on Kaggle. The dataset was originally created to support research on toxic language detection while emphasizing fairness, unintended bias, and the social implications of toxic language models. The link for the dataset is accessible using this link: [Jigsaw Unintended Bias in Toxicity Classification Dataset](https://www.kaggle.com/competitions/jigsaw-unintended-bias-in-toxicity-classification/data)
