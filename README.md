@@ -99,11 +99,11 @@ This rating was used to define the binary classification target:
 
 Unlike approaches that rely solely on text data, this project incorporated both textual and numeric features:
 
-1: Text Features
+### 1: Text Features
 * Raw comment text
 * Transformed using TF-IDF vectorization (with max_features = 2000)
 
-2: Numeric Features
+### 2: Numeric Features
 * Continuous toxicity score
 * Auxiliary toxicity indicators (e.g., insult, obscene, identity_attack, etc.)
 * These features enriched the model by providing additional context beyond language alone
