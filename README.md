@@ -5,7 +5,13 @@ Dongju Han, Kayla Kim, Mason Nicoletti
 
 ## 🧾 Introduction:
 
-Social media harm is a pervasive issue, driven by the rapid spread of toxic comments, hate speech, and polarized discourse across online platforms. As part of Data Project 3, the team collected and analyzed large-scale Bluesky Firehose data, accessible in the project repository under the skyblue directory: [Skyblue Directory](https://github.com/djhan0330/ds3022-data-project-3/tree/main/skyblue)
+Social media harm is a pervasive issue, driven by the rapid spread of toxic comments, hate speech, and polarized discourse across online platforms. As part of one Data Project, the team collected and analyzed large-scale Bluesky Firehose data, accessible in the project repository under the skyblue directory: [Skyblue Directory](https://github.com/djhan0330/ds3022-data-project-3/tree/main/skyblue) During that project, one team member conducted a personal exploratory analysis of social media comments, which revealed patterns of toxic language and sparked our interest in investigating toxic comment classification more deeply. This follow-up project expands on that initial work by applying machine learning techniques to the Jigsaw Unintended Bias in Toxicity Classification dataset. Before modeling, we generated word clouds for both toxic and non-toxic comments to visualize common linguistic patterns and gain an intuitive overview of the dataset.
+
+### 📚 Dataset Overview via Word Clouds
+
+| Non-Toxic Comments | Toxic Comments |
+|--------------------|----------------|
+| ![](output/wordcloud_non_toxic.png) | ![](output/wordcloud_toxic.png) |
 
 
 Through this exploratory analysis, the team identified patterns and linguistic features indicative of harmful online content. To study these patterns rigorously, the project applies a range of machine-learning methods for sentiment and toxicity classification, including Support Vector Machines (SVM), logistic regression, ensemble methods such as Random Forest, and neural networks. By comparing the performance of these models, the analysis aims to provide deeper insight into how toxic speech manifests within social media data and which approaches are most effective at detecting harmful content at scale.
