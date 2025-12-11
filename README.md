@@ -29,39 +29,40 @@ A full dependency list is provided in requirements.txt
 
 Below is an outline of the folders and files in this repository to help users quickly understand the organization:
 
+```text
 toxic-comment-analysis/
 ├── data/
-│   ├── test_link.txt         # Link to the Testing Data Set in Google Drive 
-|   ├── train.csv.zip         # Training Dataset, Partitioned 80% of the dataset to train
-│   ├── test.csv.zip          # Testing Dataset, Partitioned 20% of the dataset to test 
+│   ├── test_link.txt                     # Link to the testing dataset in Google Drive
+│   ├── train.csv.zip                     # Training dataset (80% of full data)
+│   └── test.csv.zip                      # Testing dataset (20% of full data)
 │
 ├── notebooks/
-│   ├── descriptive_analysis.ipynb                # Exploratory data analysis
-│   ├── svm.ipynb                                 # SVM sentiment model
-│   ├── nn_toxic_comment_classifier.ipynb         # Neural network model
-│   ├── regression.ipynb                          # Logistic regression model
-│   ├── ensemble.ipynb                            # Random forest model
-│   └── test_best_model.ipynb                     # Testing the dataset with our best model and hyperparameters 
+│   ├── descriptive_analysis.ipynb        # Exploratory data analysis on raw/cleaned data
+│   ├── svm.ipynb                         # SVM sentiment model
+│   ├── nn_toxic_comment_classifier.ipynb # Neural network sentiment model
+│   ├── regression.ipynb                  # Logistic regression model
+│   ├── ensemble.ipynb                    # Random forest / ensemble model
+│   └── test_best_model.ipynb             # Evaluation of the best-performing model
 │
 ├── output/
-|   ├── comment-numeric-ensemble-confusionmatrix.png      # Confusion matrix for ensemble model
-|   ├── comment-numeric-regression-confusionmatrix.png    # Confusion matrix for logistic regression model
-|   ├── comment-numeric-svm-confusionmatrix.png           # Confusion matrix for SVM model
-|   ├── mean_toxicity_by_class.csv                        # Table summarizing average toxicity scores by class
-|   ├── numeric-nn-confusionmatrix.png                    # Confusion matrix for neural network model
-|   ├── toxicity_distribution_by_class.png                # Bar/Histogram showing toxicity distribution per label
-|   ├── word_char_hist.png                                # Histogram of word and character counts in comments
-|   ├── wordcloud_non_toxic.png                           # Word cloud of most frequent words in non-toxic comments
-|   ├── wordcloud_toxic.png                               # Word cloud of most frequent words in toxic comments
-
-├── scripts/
-│   ├── data_cleaning.py                   #Data Cleaning (Removing NA values, duplicates, irrelevant columns, and encoding the rating variable)
-│   ├── eda_cleaned_data.ipynb             #Basic EDA on clean data
-│   ├── eda_raw_data.ipynb                 #Basic EDA on raw data
+│   ├── comment-numeric-ensemble-confusionmatrix.png   # Confusion matrix for ensemble model
+│   ├── comment-numeric-regression-confusionmatrix.png # Confusion matrix for logistic regression
+│   ├── comment-numeric-svm-confusionmatrix.png        # Confusion matrix for SVM model
+│   ├── mean_toxicity_by_class.csv                     # Average toxicity score by class
+│   ├── numeric-nn-confusionmatrix.png                 # Confusion matrix for neural network model
+│   ├── toxicity_distribution_by_class.png             # Toxicity distribution by label
+│   ├── word_char_hist.png                             # Word/character count histogram
+│   ├── wordcloud_non_toxic.png                        # Word cloud for non-toxic comments
+│   └── wordcloud_toxic.png                            # Word cloud for toxic comments
 │
-├── .gitignore                # Specifies files and folders that should not be tracked by Git 
-├── requirements.txt          # Project dependencies
-└── README.md                 # Project description and documentation
+├── scripts/
+│   ├── data_cleaning.py                # Data cleaning (NA removal, deduplication, encoding)
+│   ├── eda_cleaned_data.ipynb          # EDA on cleaned dataset
+│   └── eda_raw_data.ipynb              # EDA on raw dataset
+│
+├── .gitignore                          # Files and folders excluded from version control
+├── requirements.txt                    # Project dependencies
+└── README.md                           # Project description and documentation
 
 
 ## Dataset Description: 
