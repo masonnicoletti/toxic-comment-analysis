@@ -37,24 +37,24 @@ toxic-comment-analysis/
 │   └── test.csv.zip                      # Testing dataset (20% of full data)
 │
 ├── notebooks/
-│   ├── descriptive_analysis.ipynb        # Exploratory data analysis on raw/cleaned data
-│   ├── svm.ipynb                         # SVM sentiment model
-│   ├── nn_toxic_comment_classifier.ipynb # Neural network sentiment model
-│   ├── regression.ipynb                  # Logistic regression model
-│   ├── ensemble.ipynb                    # Random forest / ensemble model
-│   └── test_best_model.ipynb             # Evaluation of the best-performing model
+│   ├── descriptive_analysis.ipynb          # Exploratory data analysis on raw/cleaned data
+│   ├── svm.ipynb                           # SVM sentiment model
+│   ├── nn_toxic_comment_classifier.ipynb   # Neural network sentiment model
+│   ├── regression.ipynb                    # Logistic regression model
+│   ├── ensemble.ipynb                      # Random forest / ensemble model
+│   └── test_best_model.ipynb               # Evaluation of the best-performing model
 │
 ├── output/
-│   ├── comment-numeric-ensemble-confusionmatrix.png   # Confusion matrix for ensemble model
-│   ├── comment-numeric-regression-confusionmatrix.png # Confusion matrix for logistic regression
-│   ├── comment-numeric-svm-confusionmatrix.png        # Confusion matrix for SVM model
-│   ├── mean_toxicity_by_class.csv                     # Average toxicity score by class
-│   ├── numeric-nn-confusionmatrix.png                 # Confusion matrix for neural network model
-│   ├── toxicity_distribution_by_class.png             # Toxicity distribution by label
-│   ├── word_char_hist.png                             # Word/character count histogram
-│   ├── wordcloud_non_toxic.png                        # Word cloud for non-toxic comments
-│   └── wordcloud_toxic.png                            # Word cloud for toxic comments
-│
+│   ├── comment-numeric-ensemble-confusionmatrix.png     # Confusion matrix for ensemble model
+│   ├── comment-numeric-regression-confusionmatrix.png   # Confusion matrix for logistic regression
+│   ├── comment-numeric-svm-confusionmatrix.png          # Confusion matrix for SVM model
+│   ├── mean_toxicity_by_class.csv                       # Average toxicity score by class
+│   ├── numeric-nn-confusionmatrix.png                   # Confusion matrix for neural network model
+│   ├── toxicity_distribution_by_class.png               # Toxicity distribution by label
+│   ├── word_char_hist.png                               # Word/character count histogram
+│   ├── wordcloud_non_toxic.png                          # Word cloud for non-toxic comments
+│   └── wordcloud_toxic.png                              # Word cloud for toxic comments
+│ 
 ├── scripts/
 │   ├── data_cleaning.py                # Data cleaning (NA removal, deduplication, encoding)
 │   ├── eda_cleaned_data.ipynb          # EDA on cleaned dataset
