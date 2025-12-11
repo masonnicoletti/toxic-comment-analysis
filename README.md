@@ -103,3 +103,30 @@ Unlike approaches that rely solely on text data, this project incorporated both 
 By combining text-derived embeddings with structured numeric variables, the models were able to learn both linguistic patterns and quantitative signals of toxicity.
 
 After preprocessing (removing nulls, duplicates, and empty comments), the resulting dataset contained approximately 1,593,229 samples, with a naturally imbalanced label distribution in which non-toxic comments are more common than toxic ones.
+
+## Model Overview
+
+We evaluated four machine learning models for toxic comment classification:
+
+* Logistic Regression (baseline linear model)
+* Support Vector Machine (SVM)
+* Ensemble Model (Random Forest)
+* Neural Network (dense feed-forward classifier)
+
+Models were trained using:
+- TF-IDF text embeddings (max_features = 2000)
+- Embeddings in Neural Network
+- Numeric toxicity indicators (insult, obscene, identity_attack, etc.)
+
+The goal was to compare classical ML approaches with neural models on the same feature space.
+
+## 📊 Model Performance (Confusion Matrices)
+
+Below are the confusion matrices for each classifier:
+
+| Model | Confusion Matrix |
+|-------|------------------|
+| **Ensemble Model** | ![](output/comment-numeric-ensemble-confusionmatrix.png) |
+| **Logistic Regression** | ![](output/comment-numeric-regression-confusionmatrix.png) |
+| **SVM** | ![](output/comment-numeric-svm-confusionmatrix.png) |
+| **Neural Network** | ![](output/numeric-nn-confusionmatrix.png) |
